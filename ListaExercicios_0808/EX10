@@ -1,0 +1,10 @@
+public class EX10 {
+    public static void main(String[] args) {
+        double n1 = 7.5;
+        double n2 = 8.5;
+        double n3 = 10;
+        double media =(n1+n2+n3)/3;
+
+        System.out.println("A Média aritmética é: " + media);
+    }
+}
