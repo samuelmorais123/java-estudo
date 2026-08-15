@@ -1,0 +1,15 @@
+package Exercicio0808;
+public class EX7 {
+    public static void main (String [] args){
+        int A = 10;
+        int B = 20;
+        int temp;
+        
+        temp = A;
+        A = B;
+        B = temp;
+
+        System.out.println("Valor de A: " + A);
+        System.out.println("Valor de B: " + B);
+    }
+}

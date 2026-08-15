@@ -1,0 +1,23 @@
+package Exercicio0808;
+
+import java.util.Scanner;
+
+public class EX17 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Nome: ");
+        String nome = sc.nextLine();
+
+        System.out.print("Sobrenome: ");
+        String sobrenome = sc.nextLine();
+
+        String completo = nome + " " + sobrenome;
+
+        System.out.println("Nome completo: " + completo);
+        System.out.println("Maiúsculas: " + completo.toUpperCase());
+        System.out.println("Quantidade de caracteres: " + completo.length());
+
+        sc.close();
+    }
+}
