@@ -64,8 +64,6 @@ cada uma das pastas `exercicio2-heranca`, `exercicio3-polimorfismo` e
 
 ## Dificuldades encontradas e como foram resolvidas
 
-Aqui vai a versão resumida:
-
 ```
 ## Dificuldades encontradas e como foram resolvidas
 
