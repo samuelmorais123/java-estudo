@@ -1,7 +1,7 @@
 # Atividade de Autoestudo — Encapsulamento, Herança e Polimorfismo
 
-**Nome completo:** [Seu nome completo]
-**Turma:** [Sua turma]
+**Nome completo:** Samuel Morais Ferreira Campos
+**Turma:** Técnicas de Programação - 2º DSM
 
 ## Descrição dos exercícios
 
@@ -64,17 +64,27 @@ cada uma das pastas `exercicio2-heranca`, `exercicio3-polimorfismo` e
 
 ## Dificuldades encontradas e como foram resolvidas
 
-[Descreva aqui as dificuldades que você teve ao implementar cada exercício e
-como resolveu — por exemplo, dúvidas sobre quando usar `super()`, sobre a
-ordem de validação na retirada do cofrinho, ou sobre por que a sobrecarga não
-pode depender apenas do tipo de retorno.]
+Aqui vai a versão resumida:
 
-## Checklist antes da entrega
+```
+## Dificuldades encontradas e como foram resolvidas
 
-- [ ] Os quatro exercícios compilam e executam sem erros.
-- [ ] Cada classe pública está em um arquivo com o mesmo nome.
-- [ ] Nenhum arquivo `.class`, senha ou token foi incluído no repositório.
-- [ ] O repositório segue a estrutura sugerida.
-- [ ] Este README.md está completo (nome, turma e dificuldades preenchidos).
-- [ ] O link do GitHub abre corretamente.
-- [ ] A entrega foi feita no Microsoft Teams.
+**Exercício 1 (Cofrinho):** Separei a validação da retirada em duas condições
+e isso gerava mensagens de erro duplicadas. Uni tudo em uma única condição
+com `&&`, como sugere a Pista 3, e o problema foi resolvido.
+
+**Exercício 2 (Conteúdo):** Esqueci de chamar `super(titulo, duracaoMinutos)`
+no construtor das subclasses e o código não compilava. Entendi que essa
+chamada precisa ser a primeira instrução do construtor para inicializar os
+atributos herdados.
+
+**Exercício 3 (Calculadora):** Tentei diferenciar duas versões de `somar()`
+só pelo tipo de retorno, o que deu erro de ambiguidade. Percebi que a
+sobrecarga depende da lista de parâmetros, não do retorno, e ajustei.
+
+**Exercício 4 (Pagamentos):** Não entendia por que `calcularTotal()`, na
+superclasse, já usava a taxa certa de cada subclasse sem eu reescrevê-lo.
+Vi que, como ele chama `calcularTaxa()` internamente, o Java executa a
+versão sobrescrita do objeto real — foi aí que o polimorfismo dinâmico fez
+sentido. Apliquei o mesmo raciocínio no desafio extra (`PagamentoBoleto`).
+```
