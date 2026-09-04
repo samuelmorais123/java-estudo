@@ -67,20 +67,20 @@ cada uma das pastas `exercicio2-heranca`, `exercicio3-polimorfismo` e
 ```
 ## Dificuldades encontradas e como foram resolvidas
 
-**Exercício 1 (Cofrinho):** Separei a validação da retirada em duas condições
+Exercício 1 (Cofrinho): Separei a validação da retirada em duas condições
 e isso gerava mensagens de erro duplicadas. Uni tudo em uma única condição
 com `&&`, como sugere a Pista 3, e o problema foi resolvido.
 
-**Exercício 2 (Conteúdo):** Esqueci de chamar `super(titulo, duracaoMinutos)`
+Exercício 2 (Conteúdo): Esqueci de chamar `super(titulo, duracaoMinutos)`
 no construtor das subclasses e o código não compilava. Entendi que essa
 chamada precisa ser a primeira instrução do construtor para inicializar os
 atributos herdados.
 
-**Exercício 3 (Calculadora):** Tentei diferenciar duas versões de `somar()`
+Exercício 3 (Calculadora): Tentei diferenciar duas versões de `somar()`
 só pelo tipo de retorno, o que deu erro de ambiguidade. Percebi que a
 sobrecarga depende da lista de parâmetros, não do retorno, e ajustei.
 
-**Exercício 4 (Pagamentos):** Não entendia por que `calcularTotal()`, na
+Exercício 4 (Pagamentos): Não entendia por que `calcularTotal()`, na
 superclasse, já usava a taxa certa de cada subclasse sem eu reescrevê-lo.
 Vi que, como ele chama `calcularTaxa()` internamente, o Java executa a
 versão sobrescrita do objeto real — foi aí que o polimorfismo dinâmico fez
